@@ -1,7 +1,9 @@
-<%= form_for (:session) do |f| %>
-  <div class="signin-form d-flex flex-column mt-3">
-    <%= f.label :username, 'Username' %>
-    <%= f.text_field :username, autocomplete: 'off' %>
-    <%= f.submit 'Sign in' %>
-  </div>
-<% end %>
+<div class="signin-form text-center d-flex justify-content-center">
+  <%= form_for (:session) do |f| %>
+    <div class="d-flex flex-column mt-3 w-5">
+      <%= f.label :username, 'Username' %>
+      <%= f.text_field :username, autocomplete: 'off' %>
+      <%= f.submit 'Sign in' %>
+    </div>
+  <% end %>
+</div>
