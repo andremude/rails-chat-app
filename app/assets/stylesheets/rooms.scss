@@ -9,7 +9,7 @@
   }
 
   .col-md-3 {
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   .col-md-9 {
@@ -37,17 +37,43 @@
   padding: 10px
 }
 
+.rooms-list {
+  margin-bottom: 30px;
+}
+
 .signout {
+  display: flex;
   text-align: center;
-  padding: 10px;
+  justify-content: center;
+  padding: 5px 10px;
 }
 
 .signout-text {
   border: 1px solid rgb(76, 75, 75);
-  border-radius: 5px;
   padding: 5px 20px;
 }
 
 .signout-text:hover {
   text-decoration: none;
+}
+
+
+
+// new_room_form
+
+.new-room {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.btn-add {
+  border-radius: 0px 5px 5px 0px;
+  border: 0px;
+  background-color: #0073ffbe;
+  color: white;
+  font-weight: bold;
+}
+
+.users-rooms-container {
+  margin-left: 5px;
+  margin-bottom: 20px;
 }
