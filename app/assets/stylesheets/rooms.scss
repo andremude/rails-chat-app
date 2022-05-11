@@ -30,11 +30,12 @@
   .message-box {
   width: fit-content;
   max-width: 40%;
-  padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: #555555 ;
-  padding: 10px
+  padding: 10px 20px;
+  padding-left: 10px;
+  text-align: left;
 }
 
 .rooms-list {
