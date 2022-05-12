@@ -42,7 +42,7 @@
   margin-bottom: 30px;
 }
 
-.signout {
+.signout-container {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -50,12 +50,18 @@
 }
 
 .signout-text {
-  border: 1px solid rgb(76, 75, 75);
+  border: none;
   padding: 5px 20px;
+  background-color: #0073ffbe;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .signout-text:hover {
   text-decoration: none;
+  color: white;
+  transform: scale(1.05) ;
 }
 
 
