@@ -8,14 +8,19 @@
         <%= render @users %>
       </div>
     </div>
+
     <h4> Rooms </h4>
     <%= render partial: "layouts/new_room_form" %>
+
     <div>
       <%= turbo_stream_from "rooms" %>
       <div id="rooms" class="my-3">
-            <%= render @rooms %>
+      console.log("1")
+        <%= render @rooms %>
+      console.log("2")
       </div>
     </div>
+
     <div class="signout-container">
       <%= link_to 'Sign Out', signin_path,  :method => :delete, class:"signout-text" %>
     </div>

@@ -64,8 +64,18 @@
   transform: scale(1.05) ;
 }
 
+.room-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #0073ffbe;
+  padding: 3px 15px;
+  margin: 5px 0px;
+  width: 100px;
+}
 
-
+#rooms {
+  overflow-y: scroll;
+}
 // new_room_form
 
 .new-room {
