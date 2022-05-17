@@ -1,6 +1,9 @@
 <div class="row">
   <div class="col-md-3">
     <h5 class="text-center mt-3"> Hi <%= @current_user.username %>! </h5>
+    <div class="avatar">
+        <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8JyScJ3XAm0g9mNMQ1Ws7EI6LoVgs7_HDXg&usqp=CAU", class: "avatar dropdown-toggle""navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false, height: '50px', width: '50px' %>
+    </div>
     <h4> Users </h4>
     <div class="mb-3">
       <%= turbo_stream_from "users" %>
