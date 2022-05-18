@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+rooms = [{ name: 'Sports' }, { name: 'Tech' }]
+
+users = [{ username: 'AndresM', password: '123456' }, { username: 'JohnH', password: '123456' }]
+
+puts '------------Users------------'
+
+users.each do |attributes|
+  User.create!(attributes)
+end
+
+puts '------------Rooms------------'
+
+rooms.each do |attributes|
+  Room.create!(attributes)
+end
