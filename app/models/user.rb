@@ -3,4 +3,6 @@ class User < ApplicationRecord
   has_many :messages
   scope :all_except, ->(user) { where.not(id: user) }
   after_create_commit { broadcast_append_to "users" }
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 end
