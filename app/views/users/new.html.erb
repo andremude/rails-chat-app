@@ -1,5 +1,5 @@
 <div class="signup-form">
-  <h3>Create an account</h3>
+  <h3>Sign Up</h3>
   <%= form_for (:user) do |f| %>
   <div class="d-flex flex-column mt-3">
     <%= f.label :username %>
@@ -9,7 +9,8 @@
     <%#= f.label :password_confirmation %>
     <%#= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
     <br>
-    <%= f.submit "Create Account" %>
+    <%= f.submit "Sign Up", class:"signup-btn" %>
   </div>
+  <p>Already have an account? <%= link_to 'Log In', login_path %> </p>
   <% end %>
 </div>

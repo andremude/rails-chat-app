@@ -5,8 +5,4 @@ export default class extends Controller {
     this.element.reset()
     console.log('reset')
   }
-
-  connect() {
-    console.log('connect')
-  }
 }

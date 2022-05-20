@@ -15,23 +15,23 @@
     <h4> Rooms </h4>
     <%= render partial: "layouts/new_room_form" %>
 
-    <div>
+    <div class="rooms-list">
       <%= turbo_stream_from "rooms" %>
       <div id="rooms" class="my-3">
         <%= render @rooms %>
       </div>
     </div>
 
-    <div class="signout-container">
-      <%= link_to 'Sign Out', login_path,  :method => :delete, class:"signout-text" %>
+    <div class="logout-container">
+      <%= link_to 'Log Out', login_path,  :method => :delete, class:"logout-btn" %>
     </div>
   </div>
   <div class="col-md-9 bg-dark text-light">
     <% if @single_room %>
       <h4 class="text-center mt-3"> <%= @user&.username || @single_room.name.capitalize %> </h4>
       <%= turbo_stream_from @single_room %>
-      <div id="messages">
-        <%= render @messages %>
+      <div id="messages" data-controller="scroll">
+        <%= render @messages, autofocus:true %>
       </div>
       <%= render partial: 'layouts/new_message_form' %>
     <% end %>
