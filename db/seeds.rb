@@ -8,8 +8,8 @@
 
 rooms = [{ name: 'Sports' }, { name: 'Tech' }]
 
-users = [{ username: 'AndresM', password: '123456' }, { username: 'JohnH', password: '123456' }]
-
+users = [{ username: 'AndresM' }, { username: 'JohnH' }]
+# users = [{ username: 'AndresM', password: '123456' }, { username: 'JohnH', password: '123456' }]
 puts '------------Users------------'
 
 users.each do |attributes|

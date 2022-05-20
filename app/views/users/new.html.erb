@@ -1,11 +1,15 @@
-<h1>Don't have an account?</h1>
-<h1>Create an account</h1>
-
-<%= form_for @user do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <br>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <br>
-<%= end %>
+<div class="signup-form">
+  <h3>Create an account</h3>
+  <%= form_for (:user) do |f| %>
+  <div class="d-flex flex-column mt-3">
+    <%= f.label :username %>
+    <%= f.text_field :username, placeholder: "Username" %>
+    <%#= f.label :password %>
+    <%#= f.password_field :password, placeholder: "Password" %>
+    <%#= f.label :password_confirmation %>
+    <%#= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
+    <br>
+    <%= f.submit "Create Account" %>
+  </div>
+  <% end %>
+</div>

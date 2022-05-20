@@ -1,4 +1,18 @@
 class UsersController < ApplicationController
+  # def new
+  #   @user = User.new
+  # end
+
+  # def create
+  #   @user = User.create(user_params)
+  #   if @user.valid?
+  #     @user.save
+  #     redirect_to @user
+  #   else
+  #     redirect :new
+  #   end
+  # end
+
   def show
     @user = User.find(params[:id])
     @current_user = current_user
@@ -14,6 +28,10 @@ class UsersController < ApplicationController
   end
 
   private
+
+  # def user_params
+  #   params.require(:user).permit(:username, :password, :password_confirmation)
+  # end
 
   def get_name(user1, user2)
     users = [user1, user2].sort
