@@ -15,17 +15,18 @@
     <h4> Rooms </h4>
     <%= render partial: "layouts/new_room_form" %>
 
-    <div class="rooms-list">
+    <div>
       <%= turbo_stream_from "rooms" %>
-      <div id="rooms" class="my-3">
+      <div id="rooms" class="my-3 rooms-list">
         <%= render @rooms %>
       </div>
     </div>
 
     <div class="logout-container">
-      <%= link_to 'Log Out', login_path,  :method => :delete, class:"logout-btn" %>
+      <%= link_to 'Log Out', login_path, :method => :delete, class:"logout-btn" %>
     </div>
   </div>
+
   <div class="col-md-9 bg-dark text-light">
     <% if @single_room %>
       <h4 class="text-center mt-3"> <%= @user&.username || @single_room.name.capitalize %> </h4>
