@@ -5,7 +5,6 @@ class RoomsController < ApplicationController
     redirect_to '/login' unless @current_user
     @rooms = Room.public_rooms
     @users = User.all_except(@current_user)
-    render 'index'
   end
 
   def create
