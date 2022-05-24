@@ -5,7 +5,7 @@
         <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8JyScJ3XAm0g9mNMQ1Ws7EI6LoVgs7_HDXg&usqp=CAU", class: "avatar dropdown-toggle""navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false, height: '50px', width: '50px' %>
     </div>
     <h4> Users </h4>
-    <div class="mb-3">
+    <div class="mb-5">
       <%= turbo_stream_from "users" %>
       <div id="users">
         <%= render @users %>
