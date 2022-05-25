@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-rooms = [{ name: 'Sports' }, { name: 'Tech' }]
+rooms = [{ name: 'Sports' }, { name: 'Tech' }, { name: 'Football' }, { name: 'Cycling' }, { name: 'Travel' }]
 
-users = [{ username: 'AndresM' }, { username: 'JohnH' }]
+users = [{ username: 'AndresM' }, { username: 'JohnH' }, { username: 'JackM' }, { username: 'PaulF' }]
 
 puts '------------Users------------'
 
