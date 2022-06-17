@@ -15,5 +15,8 @@ export default class extends Controller {
 
   resetScroll() {
     messages.scrollTop = messages.scrollHeight - messages.clientHeight;
+
+    const audio_tag = document.getElementById('audio-tag');
+    audio_tag.play();
   }
 }
